@@ -7,6 +7,6 @@ install:
   - pip install .
   - pip install pytest pytest-cov coveralls
 script:
-  - py.test -v --cov=date_guesser test/
+  - py.test -v --cov=date_guesser_rc test/
 after_success:
   - coveralls
