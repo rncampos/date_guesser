@@ -20,7 +20,7 @@ This adapted version extracts dates from the URL.
 
 .. code-block:: python
     
-    from date_guesser import guess_date
+    from date_guesser_rc import guess_date
     
     # Uses url slugs when available
     guess = guess_date(url='https://arquivo.pt/noFrame/replay/20160509184307/https://tvi24.iol.pt/internacional/24/04/2021/iraque-incendio-em-unidade-de-cuidados-intensivos-faz-23-mortos')
