@@ -3,7 +3,7 @@ Date Guesser
 
 |Build Status| |Coverage| 
 
-Adapted from `on date_guesser <https://pypi.org/project/date-guesser/>`_, project (as a part of the `mediacloud project <https://mediacloud.org/>`_,). Contrary to the initial project, we only focus on extracting dates from URLs.
+Adapted from `date_guesser <https://pypi.org/project/date-guesser/>`_, project (as a part of the `mediacloud project <https://mediacloud.org/>`_,). Contrary to the initial project, we only focus on extracting dates from URLs.
 
 Installation
 ------------
