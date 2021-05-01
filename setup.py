@@ -25,6 +25,6 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     packages=find_packages(exclude=['test']),
-    install_requires=['arrow>=0.12.0'],
+    install_requires=['arrow>=0.12.0', 'pytz>=2017.3'],
     include_package_data=True,
 )
