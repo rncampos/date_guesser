@@ -49,8 +49,14 @@ def url_date_generator(url):
         dictionary with keys 'year', 'month', 'day'
         string describing how the dictionary was found
     """
+    '''
     matches = itertools.chain(URL_DATE_REGEX.finditer(url), URL_DATE_REGEX_BACKWARDS.finditer(url),
                               URL_DATE_REGEX_PT.finditer(url), URL_DATE_REGEX_PTArquivo.finditer(url))
+                              
+    '''
+    matches = itertools.chain(URL_DATE_REGEX.finditer(url),
+                              URL_DATE_REGEX_PT.finditer(url), URL_DATE_REGEX_PTArquivo.finditer(url), URL_DATE_REGEX_BACKWARDS.finditer(url))
+    #matches = itertools.chain(URL_DATE_REGEX_PTArquivo.finditer(url))
     for match in matches:
         method = 'Found {} in url'.format(match.group())
         yield match.groupdict(), method
